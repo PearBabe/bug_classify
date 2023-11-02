@@ -1,0 +1,20 @@
+[Desktop Entry]
+Categories=GNOME;DesktopSettings;
+Comment[zh_CN]=VSCode
+Comment=VSCode
+Exec=/opt/VSCode-linux-x64/bin/code
+GenericName[zh_CN]=VSCode
+GenericName=VSCode
+Icon=/opt/VSCode-linux-x64/resources/app/resources/linux/code.png
+MimeType=
+Name[zh_CN]=VSCode
+Name=VSCode
+Path=
+StartupNotify=true
+Terminal=false
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=owen
+

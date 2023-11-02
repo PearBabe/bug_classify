@@ -1,0 +1,379 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FUZZ IFRAME </title>
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/ihealth.style.min.css">
+</head>
+<body>
+
+<div id="ihealth-layout" class="theme-tradewind">
+    <div class="main px-lg-4 px-md-4">
+        <div class="body d-flex py-3">
+            <div class="container-xxl">
+                <div class="row g-3 mb-3">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
+                                <h6 class="mb-0 fw-bold ">Moonshine蒸馏提取</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="team_members video-list">
+                                    <div class="owl-carousel owl-theme owl-carouselthree">
+                                        <div class="item text-center">
+                                            <img src="/static/picture/avatar13.jpg" alt="" class="rounded-3 mb-3 img-thumbnail shadow-sm">
+                                        </div>
+                                        <div class="item text-center">
+                                            <img src="/static/picture/avatar2.jpg" alt="" class="rounded-3 mb-3 img-thumbnail shadow-sm">
+                                        
+                                        </div>
+                                        <div class="item text-center">
+                                            <img src="/static/picture/avatar32.jpg" alt="" class="rounded-3 mb-3 img-thumbnail shadow-sm">
+                                         
+                                        </div>
+                                        <div class="item text-center">
+                                            <img src="/static/picture/avatar41.jpg" alt="" class="rounded-3 mb-3 img-thumbnail shadow-sm">
+                                         
+                                        </div>
+                                        <div class="item text-center">
+                                            <img src="/static/picture/avatar52.jpg" alt="" class="rounded-3 mb-3 img-thumbnail shadow-sm">
+                                         
+                                        </div>
+                                        <div class="item text-center">
+                                            <img src="/static/picture/avatar61.jpg" alt="" class="rounded-3 mb-3 img-thumbnail shadow-sm">
+                                        
+                                        </div>
+                                        <div class="item text-center">
+                                            <img src="/static/picture/avatar71.jpg" alt="" class="rounded-3 mb-3 img-thumbnail shadow-sm">
+                                          
+                                        </div>
+                                        <div class="item text-center">
+                                            <img src="/static/picture/avatar81.jpg" alt="" class="rounded-3 mb-3 img-thumbnail shadow-sm">
+                                         
+                                        </div>
+                                        <div class="item text-center">
+                                            <img src="/static/picture/avatar91.jpg" alt="" class="rounded-3 mb-3 img-thumbnail shadow-sm">
+                                         
+                                        </div>
+                                        <div class="item text-center">
+                                            <img src="/static/picture/avatar101.jpg" alt="" class="rounded-3 mb-3 img-thumbnail shadow-sm">
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row g-3 mb-3">
+                    <div class="col-lg-12 col-xl-7">
+                        <div class="card mb-3">
+                            <div class="card-header py-5 d-flex justify-content-center bg-transparent border-bottom-0">
+                                <h3 class="mb-0 fw-bold "><i class="icofont-stethoscope-alt fs-1 color-light-orange pe-4"></i>请选择测试参数！</h3>
+                            </div>
+                            <div class="card-body">
+                                <form id="form1" method="POST" enctype="multipart/form-data">
+                                <div class="selectsymptoms d-flex justify-content-evenly flex-wrap">                                    
+                                    <button type="button" class="btn btn-light d-flex align-items-center m-3 active"><i class="icofont-star-alt-2 fs-4 color-lightgreen me-2"></i>蒸馏提取配置</button>
+                                    <input type="radio" class="btn btn-light d-flex align-items-center m-3" name="distillItems" value="implicit" checked="checked"><i class="icofont-brain-alt fs-4 color-lavender-purple me-2"></i>隐式依赖
+                                    <input type="radio" class="btn btn-light d-flex align-items-center m-3" name="distillItems" value="explicit"><i class="icofont-lungs fs-4 color-info-light  me-2"></i>显式依赖
+                                    <input type="radio" class="btn btn-light d-flex align-items-center m-3" name="distillItems" value="rows"><i class="icofont-blood-drop fs-4 text-danger me-2"></i>原样提取                
+                                    <button type="button" class="btn btn-light d-flex align-items-center m-3 active"><i class="icofont-thermometer fs-4 color-careys-pink me-2"></i>解析跟踪文件</button>
+                                    <div class="col-md-6">
+                                        <label for="formFileMultiple" class="form-label"> 文件上传</label>
+                                        <input class="form-control" type="file" id="formFileMultiple" multiple="" required="">
+                                    </div>
+                                    <!-- <input type="checkbox" class="btn btn-light d-flex align-items-center m-3 active" name="distillItems" value="./bin/moonshine"><i class="icofont-star-alt-2 fs-4 color-lightgreen me-2"></i>./bin/moonshine                                -->
+                                </div>
+                                <div class="loader-container mb-3">
+                                    <div class="bph d-flex justify-content-center my-5">
+                                        <i class="icofont-heart-beat-alt fs-2 text-danger me-3"></i>
+                                        <div class="bph_info text-center">
+                                            <h3 class="fw-bold mb-0">开始提取系统调用</h3>
+                                            <span class="text-muted">Linux内核版本5.15.0-71-generic</span>
+                                        </div>
+                                    </div>
+                                    <div class="loader my-5">
+                                      <img src="/static/picture/heartbeat.png" alt="Lifeline">
+                                      <div class="slide-box">
+                                        <div class="solid"></div>
+                                      </div>
+                                    </div>
+                                    <div class="startvideo-block text-center">
+                                        <button type="button" id="sub_btn1" class="btn  bg-secondary text-white fs-5 mt-3">Get Started</button>
+                                    </div>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-12 col-xl-5">
+                        <div class="card p-3">
+                            <!-- 测试结果展现 -->
+                            <div class="position-relative mb-4 fle">
+                                <img src="/static/picture/doctor.jpg" alt="avatar" class="img-fluid chat-img"> 
+                            </div>
+                            <div class="card-header py-5 d-flex justify-content-center bg-transparent border-bottom-0">
+                                <h3 class="mb-0 fw-bold "><i class="icofont-brand-gnome"></i>提取结果如下</h3>
+                            </div>
+                            
+                            <li class="card mb-2">
+                                <div class="card-body p-lg-4 p-3">
+                                    <div class="d-flex mb-3 pb-3 border-bottom flex-wrap">
+                                        <img class="avatar rounded-circle" src="/static/picture/1.jpg" alt="">
+                                        <div class="flex-fill ms-3 text-truncate">
+                                            <h6 class="mb-0"><span id="distill">说明是implicit/还是explicit</span>
+                                            <span class="text-muted" id="date" >测试日期</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item-post">
+                                        <h6 class=""> RESAULT</h6>
+                                        <!-- <p>测试ID:<span id="disId"></span></p> -->
+                                        <p id="disId"></p>
+                                        <p id="fileTotal"></p>
+                                        <p>系统调用总数:<span id="seedsTotal"></span></p>
+                                        <!-- <p id="seedsTotal"></p> -->
+                                        <p id="proTotal"></p>
+                                        <p id="avgPro"></p>
+                                        <p id="distillPro"></p>
+                                        <p>提取系统调用数:<span id="validCalls"></span></p>
+                                        <!-- <p id="validCalls"></p> -->
+                                        <p id="deserPro"></p>                                   
+                                    </div>
+                                </div>
+                            </li> 
+                           
+                            <div class="card mb-3">
+                                <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
+                                    <h6 class="mb-0 fw-bold ">结果统计</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-end text-center">
+                                        <div class="p-2">
+                                            <h6 class="mb-0 fw-bold">seedsTotal</h6>
+                                            <span class="text-muted" id="seedsTotal2"></span>
+                                        </div>
+                                        <div class="p-2 ms-4">
+                                            <h6 class="mb-0 fw-bold">validCalls</h6>
+                                            <span class="text-muted" id="validCalls2"></span>
+                                        </div>
+                                    </div>
+                                    <div id="apex-circle-gradient"></div>
+                                    <div class="row">
+                                        <!-- <div class="col">
+                                            <span class="mb-3 d-block">Fat</span>
+                                            <div class="progress-bar  bg-secondary" role="progressbar" style="width: 55%; height: 5px;"></div>
+                                            <span class="mt-2 d-block text-secondary">24g left</span>
+                                        </div>
+                                        <div class="col">
+                                            <span class="mb-3 d-block">Carbs</span>
+                                            <div class="progress-bar  bg-primary" role="progressbar" style="width: 60%; height: 5px;"></div>
+                                            <span class="mt-2 d-block text-primary">78g left</span>
+                                        </div>
+                                        <div class="col">
+                                            <span class="mb-3 d-block">Protein</span>
+                                            <div class="progress-bar  bg-lavender-purple" role="progressbar" style="width: 70%; height: 5px;"></div>
+                                            <span class="mt-2 d-block color-lavender-purple">28 left</span> 
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-message">
+                                <textarea id="mark" class="form-control" placeholder="备注..."></textarea>
+                            </div>
+                            <button type="button" id="sub_mark" class="btn btn-light d-flex align-items-center m-3"><i class="icofont-astonished fs-4 color-santa-fe me-2"></i>提交</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  
+</div>
+
+<script src="/static/script/libscripts.bundle.js"></script>
+
+<script src="/static/script/apexcharts.bundle.js"></script>
+<script src="/static/script/owl.carousel.js"></script>
+
+<script src="/static/script/template.js"></script>
+<script src="/static/script/virtual.js"></script>
+<script src="/static/script/patient-profile.js"></script>
+<script>
+    $(function (){
+        var disId = "";
+        $("#sub_btn1").click(function (){
+            //alert("666");
+            var formData=new FormData;
+            var file = $("#formFileMultiple")[0].files[0];
+            var distill=$('input:radio[name="distillItems"]:checked').attr("value");
+            console.log(distill);
+            formData.append("distill",distill);
+            formData.append("file",file);
+
+            $.ajax({
+                type:"post",
+                url:"/uploadArg?id={{.id}}",
+                data:formData,
+                cache:false,
+                async:false,
+                processData: false,
+                contentType: false,
+                success:function(res) {
+                    //alert(res["distill"])
+                    $("#distill").text(res["distill"])
+                    $("#distill").text(res["distill"])
+                    $("#fileTotal").text("测试文件总数："+res["fileTotal"])
+                    $("#seedsTotal").text(res["seedsTotal"])
+                    $("#seedsTotal2").text(res["seedsTotal"])
+                    $("#proTotal").text("进程总数："+res["proTotal"])
+                    if (res["avgPro"]!="") {
+                        $("#avgPro").text("进程平均长度："+res["avgPro"])
+                    }
+                    $("#distillPro").text("提取进程数："+res["distillPro"])
+                    $("#validCalls").text(res["validCalls"])
+                    $("#validCalls2").text(res["validCalls"])
+                    $("#deserPro").text("提取的进程存放位置："+res["deserPro"])
+                    $("#date").text(res["date"])
+                    $("#disId").text("测试ID:"+res["disId"])
+                    disId=res["disId"]
+                    //alert(res["distill"])
+                }
+            });
+        });
+
+        $("#validCalls").bind('DOMNodeInserted',function(){
+            $(document).ready(function() {
+                var ser=parseInt($("#validCalls").text());
+                var st=parseInt($("#seedsTotal").text());
+                var per=ser / st;
+                // alert(ser)
+                // alert(st)
+                // alert(per)
+                per =per *100
+                var options = {
+                    chart: {
+                        height: 250,
+                        type: 'radialBar',
+                        toolbar: {
+                            show: false
+                        }
+                    },
+                    colors:  ['var(--chart-color5)'],
+                    plotOptions: {
+                        radialBar: {
+                            startAngle: -135,
+                            endAngle: 225,
+                                hollow: {
+                                margin: 0,
+                                size: '70%',
+                                background: '#fff',
+                                image: undefined,
+                                imageOffsetX: 0,
+                                imageOffsetY: 0,
+                                position: 'front',
+
+                                dropShadow: {
+                                    enabled: true,
+                                    top: 3,
+                                    left: 0,
+                                    blur: 4,
+                                    opacity: 0.24
+                                }
+                            },
+                            track: {
+                                background: '#fff',
+                                strokeWidth: '67%',
+                                margin: 0, // margin is in pixels
+                                dropShadow: {
+                                    enabled: true,
+                                    top: -3,
+                                    left: 0,
+                                    blur: 4,
+                                    opacity: 0.35
+                                }
+                            },
+
+                            dataLabels: {
+                                showOn: 'always',
+                                name: {
+                                    offsetY: -10,
+                                    show: true,
+                                    color: '#888',
+                                    fontSize: '17px'
+                                },
+                                value: {
+                                    formatter: function(val) {
+                                        return parseInt(val);
+                                    },
+                                    color: '#111',
+                                    fontSize: '36px',
+                                    show: true,
+                                }
+                            }
+                        }
+                    },
+                    fill: {
+                        type: 'gradient',
+                        gradient: {
+                            shade: 'dark',
+                            type: 'horizontal',
+                            shadeIntensity: 0.5,
+                            gradientToColors: ['var(--chart-color4)'],
+                            inverseColors: true,
+                            opacityFrom: 1,
+                            opacityTo: 1,
+                            stops: [0, st]
+                        }
+                    },
+                    series: [per+"%"],
+                    stroke: {
+                        lineCap: 'round'
+                    },
+                    labels: ['提取系统调用数'],
+                }
+
+                var chart = new ApexCharts(
+                    document.querySelector("#apex-circle-gradient"),
+                    options
+                );
+
+                chart.render();    
+            });
+        })
+
+        $("#sub_mark").click(function (){
+            //alert("666");
+            var mark = $("#mark").val();
+            var formData=new FormData;
+            formData.append("mark",mark);
+            // var disId = $("#disId").text();
+            // alert($("#disId").text());
+            alert(disId)
+            $.ajax({
+                type:"post",
+                url:"addMark?disId="+disId,
+                data:formData,
+                cache:false,
+                async:false,
+                processData: false,
+                contentType: false,
+                success:function(res) {
+                    alert("提交成功！")                    
+                }
+            })
+        })
+    })
+</script>
+</body>
+</html> 

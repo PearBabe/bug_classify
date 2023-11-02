@@ -1,0 +1,294 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>首页 </title>
+
+    <link href="//fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style-starter.css">
+</head>
+
+<body>
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+                <h1><a class="navbar-brand" href="index01.html">
+                        <i class="fas fa-truck-moving"></i> Fuzzing
+                    </a></h1>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/about">详情</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li> -->
+                    </ul>
+                    <button id="trigger-overlay" class="searchw3-icon mx-xl-4 mx-lg-3" type="button"><i class="fas fa-search"></i></button>
+                    <div class="overlay overlay-slidedown"> 
+                        <button type="button" class="overlay-close"><i class="fas fa-times"></i></button>
+                        <nav class="w3l-formhny">
+                            <h5 class="mb-3">搜索</h5>
+                            <form action="#" method="GET" class="d-sm-flex search-header">
+                                <input class="form-control me-2" type="search" placeholder="请输入关键字..." aria-label="Search" required>
+                                <button class="btn btn-style btn-primary" type="submit">Search</button>
+                            </form>
+                        </nav>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="w3l-main-slider banner-slider" id="home">
+                <div class="slider-info banner-view banner-top1">
+                    <div class="container">
+                        <div class="banner-info header-hero-19">
+                            <p class="w3hny-tag">模糊测试fuzzing</p>
+                            <h3 class="title-hero-19">探索 Syzkaller 与 Moonshine.</h3>
+                            <a href="/admin" class="btn btn-style btn-primary mt-4">登录</a>
+
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section class="w3l-grids-3 py-5" id="about">
+        <div class="container py-md-5 py-3">
+            <div class="row w3home-ab-grids">
+                <div class="w3ab-right-top col-lg-6 pe-lg-5">
+                    <img src="/static/images/g2.jpg" alt="" class="img-fluid radius-image">
+                </div>
+                <div class="w3ab-left-top col-lg-6 mt-lg-0 mt-4 pt-lg-0 pt-2">
+                    <h6 class="title-subw3hny mb-1">模糊测试 Fuzzing(Fuzz)</h6>
+                    <h3 class="title-w3l mb-2">Linux内核漏洞挖掘的手段</h3>
+                    <p class="my-3"> 模糊测试（fuzzing）是一种自动化的软件测试技术，
+                        它通过在程序中随机或半随机地注入数据（如文件、网络流量等）并监测程序的反应，
+                        以发现程序中可能存在的漏洞和错误。
+                        对于许多程序，输入数据的数量和种类是非常庞大和复杂的，
+                        而这些输入数据可能包含有害的或未预期的内容。
+                        因此，将大量的随机或半随机的输入数据注入程序中，
+                        有可能触发程序中的漏洞或错误。如果能够发现程序中的漏洞或错误，
+                        就可以修复它们，从而提高软件的安全性和可靠性。</p>
+
+                    <!-- <a href="about.html" class="btn btn-style btn-primary mt-4">Learn More</a> -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <section class="w3l-passion-mid-sec py-5">
+    </section>
+   
+    <section class="w3l-index5 py-5" id="video">
+        <div class="container py-md-5 py-3">
+            <div class="row bottom-ab-grids align-items-center">
+                <div class="w3l-video-left col-lg-6 mb-lg-0 mb-5">
+                    <div class="position-relative mt-5">
+                        <a href="#" class="popup-with-zoom-anim play-view text-center position-absolute">
+                            <span class="video-play-icon">
+                                <!-- <span class="fa fa-play"></span> -->
+                                <span></span>
+                            </span> 
+                        </a> 
+                    </div> 
+                </div>
+                <div class="w3ab-left-top col-lg-6 mt-lg-0 mt-5 ps-lg-5">
+                    <h6 class="title-subw3hny mb-1">syzkaller</h6>
+                    <h3 class="title-w3l two mb-2">基于畸变、无监督的覆盖引导内核模糊器 Syzkaller</h3>
+                    <p class="my-3"> 这是一种基于系统调用序列的现代化测试技术，具有高效、快速、自动化、全面性等优点。</p>
+                    <p class="my-3"> Syzkaller是一款基于语法模板的Fuzzing工具，使用程序语言描述系统调用序列，
+                        然后根据这些语法模板生成随机的测试用例，以达到挖掘内核漏洞的目的。
+                        通过使用Syzkaller工具，可以挖掘出内核中隐藏的、未知的漏洞，从而提高系统的安全性和稳定性。
+                        并且，Syzkaller可以自动化执行测试，大大减少了人工测试的工作量，提高了测试的效率和准确性。
+                        此外，Syzkaller还可以通过覆盖率（kcov）等指标来评估测试用例的质量，帮助我们更好地理解内核的安全问题。</p>
+                    <a href="/admin/about" class="btn btn-style btn-primary mt-4">了解更多 </a>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section class="w3l-features py-5" id="features">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="title-content text-center mb-lg-3 mb-4">
+                <h6 class="title-subw3hny mb-1">about</h6>
+                <h3 class="title-w3l">具体内容</h3>
+            </div>
+            <div class="main-cont-wthree-2">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+                        <div class="grids-1 box-wrap">
+                            <div class="icon">
+                               <br>
+                               <h4 class="title-head mb-3">I</h4>
+                            </div>
+                            <h4><a href="#service" class="title-head mb-3">Syzkaller</a></h4>
+                            <p class="text-para">利用Syzkaller工具检测出定制设计的各类内核漏洞，
+                                以达到对内核安全性与稳定性的体会以及对该模糊测试工具的深入理解的目标</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+                        <div class="grids-1 box-wrap">
+                            <div class="icon">
+                                <br>
+                                <h4 class="title-head mb-3">II</h4>
+                            </div>
+                            <h4><a href="#service" class="title-head mb-3">Moonshine</a></h4>
+                            <p class="text-para">改进 syzkaller 基于畸变的系统调用序列生成，通过静态分析提取有用系统调用序列，
+                                提高bug检测效率与代码覆盖率。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+                        <div class="grids-1 box-wrap">
+                            <div class="icon">
+                                <br>
+                                <h4 class="title-head mb-3">III</h4>
+                            </div>
+                            <h4><a href="#service" class="title-head mb-3">BugClassify</a></h4>
+                            <p class="text-para">根据syzbot对已修复linuxbug的分类结果，通过机器学习方法，对注入的linux内核漏洞检测报告进行智能分类。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="w3l-clients py-5" id="testimonials">
+        <div class="container pt-md-5 pt-4">
+            <div class="w3-testimonial-grids align-items-center py-lg-5">
+                <div class="w3-testimonial-content-top">
+                    <div class="mb-4">
+                        <div class="item">
+                            <div class="testimonial-content">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        <q><i class="fas fa-quote-left me-2"></i>
+                                            我们开发了  MoonShine，这是一种新颖的策略，用于
+                                            从真实程序的系统调用跟踪中提取操作系统模糊器的种子，同时仍
+                                            然保留系统调用之间的依赖关系。MoonShine 利用轻量级静态分
+                                            析来有效检测不同系统调用之间的依赖关系。</q>
+                                    </blockquote>
+                                    <div class="testi-des">
+                                        <div class="test-img"><img src="/static/images/team1.jpg" class="img-fluid" alt="client-img">
+                                        </div>
+                                        <div class="peopl align-self">
+                                            <h3>Shankara Pailoor、Andrew Aday and Suman Jana</h3>
+                                            <p class="indentity">Columbia University</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="w3l-footer9">
+        <section class="footer-inner-main py-5">
+            <div class="container py-md-4">
+                <!-- <div class="below-section mt-lg-5 pt-lg-4"> -->
+                    <div class="copyright-footer">
+                        <p class="copyright-column">Copyright &copy;2023.All rights reserved.</p>
+
+                        <ul class="footer-w3list text-right">
+                            <li><a href="#">LQQ</a>
+                            </li>
+                            <li><a href="#">162468777486@qq.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                <!-- </div> -->
+            </div>
+        </section>
+
+
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+        </button>
+        <script>
+            
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+        </script>
+    </footer>
+
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/theme-change.js"></script>
+    <script src="/static/js/modernizr.custom.js"></script>
+    <script src="/static/js/classie.js"></script>
+    <script src="/static/js/demo1.js"></script>
+
+    <script>
+        $(window).on("scroll", function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        $(".navbar-toggler").on("click", function() {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function() {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function() {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        $(function() {
+            $('.navbar-toggler').click(function() {
+                $('body').toggleClass('noscroll');
+            })
+        });
+
+    </script>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

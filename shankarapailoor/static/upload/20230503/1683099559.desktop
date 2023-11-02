@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Application
+Encoding=UTF-8
+Exec=/opt/NavicatPremium15ForLinux/navicat-patch.AppImage
+Icon=/opt/NavicatPremium15ForLinux/logo.png
+Name=navicat
+Terminal=false
+Type=Application
+X-Deepin-Vendor=user-custom

@@ -1,0 +1,157 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>修改账户信息</title>
+    <link rel="stylesheet" href="/static/css/parsley.css">
+    <link rel="stylesheet" href="/static/css/ihealth.style.min.css">
+</head>
+<body>
+
+<div id="ihealth-layout" class="theme-tradewind">
+    <div class="main px-lg-4 px-md-4">
+        <div class="body d-flex py-3">
+            <div class="container-xxl">
+                <div class="row align-items-center">
+                    <div class="border-0 mb-4">
+                        <div class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap">
+                            <h3 class="fw-bold mb-0">修改账户信息</h3>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="row align-item-center">
+                    <div class="col-md-12">
+                        <div class="card mb-3">
+                            <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
+                                <h6 class="mb-0 fw-bold " id="now_user">当前用户为 {{.user.Username}}</h6> 
+                            </div>
+                            <div class="card-body">
+                                
+                                    <div class="row g-3 align-items-center">
+                                        <form>
+                                        <div class="col-md-6">
+                                            <label for="firstname" class="form-label">用户名</label>
+                                            <input type="text" class="form-control" id="username" required="">
+                                            <button class="btn btn-primary mt-4" id="sub_btnU">提交</button>
+                                        </div>
+                                        </form>
+                                        <form>
+                                        <div class="col-md-6">
+                                            <label for="lastname" class="form-label">邮箱</label>
+                                            <input type="text" class="form-control" id="email" required="">
+                                            <button class="btn btn-primary mt-4" id="sub_btnE">提交</button>
+                                        </div>
+                                        </form>
+                                        <form>
+                                        <div class="col-md-6">
+                                            <label class="form-label">密码</label>
+                                            <input type="text" class="form-control" id="password" required="">
+                                            <button class="btn btn-primary mt-4" id="sub_btnP">提交</button>
+                                        </div>
+                                        </form>
+                                        <form>
+                                        <div class="col-md-6">
+                                            <label for="formFileMultiple" class="form-label">头像上传</label>
+                                            <input class="form-control" type="file" id="formFileMultiple" multiple="" required="">
+                                            <button class="btn btn-primary mt-4" id="sub_btnS">提交</button>
+                                        </div>
+                                        </form>
+                                    </div>                                   
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+  
+</div>
+
+<script src="/static/script/libscripts.bundle.js"></script>
+<script src="/static/script/parsley.js"></script>
+<script src="/static/script/template.js"></script>     
+<script>
+    $(function() {
+        $('#basic-form').parsley();
+        $("#sub_btnU").click(function (){
+            var formData=new FormData;
+            //var src = $("#formFileMultiple")[0].files[0];
+            var username=$("#username").val();
+            formData.append("username",username);
+
+            $.ajax({
+                type:"post",
+                url:"/admin/editUsername?id={{.user.Id}}",
+                data:formData,
+                cache:false,
+                processData: false,
+                contentType: false,
+                success:function(res) {
+                    // alert(res["username"])
+                    //$("#now_user").text(res["username"])
+                    //alert(res["message"])
+                }
+            })
+        });
+        $("#sub_btnE").click(function (){
+            var formData=new FormData;
+            //var src = $("#formFileMultiple")[0].files[0];
+            var username=$("#email").val();
+            formData.append("email",email);
+
+            $.ajax({
+                type:"post",
+                url:"/admin/editEmail?id={{.user.Id}}",
+                data:formData,
+                cache:false,
+                processData: false,
+                contentType: false,
+                success:function(res) {
+                    alert(res["message"])
+                }
+            })
+        });
+        $("#sub_btnP").click(function (){
+            var formData=new FormData;
+            //var src = $("#formFileMultiple")[0].files[0];
+            var username=$("#password").val();
+            formData.append("password",password);
+
+            $.ajax({
+                type:"post",
+                url:"/admin/editPassword?id={{.user.Id}}",
+                data:formData,
+                cache:false,
+                processData: false,
+                contentType: false,
+                success:function(res) {
+                    alert(res["message"])
+                }
+            })
+        })
+        $("#sub_btnS").click(function (){
+            var formData=new FormData;
+            var src = $("#formFileMultiple")[0].files[0];
+            formData.append("src",src);
+
+            $.ajax({
+                type:"post",
+                url:"/admin/editSrc?id={{.user.Id}}",
+                data:formData,
+                cache:false,
+                processData: false,
+                contentType: false,
+                success:function(res) {
+                    alert(res["message"])
+                }
+            })
+        })
+    });
+</script>
+ 
+</body>
+</html> 
